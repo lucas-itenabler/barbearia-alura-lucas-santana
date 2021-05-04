@@ -1,0 +1,621 @@
+[33mcommit ccc5a89983a675f7997cb82bd67f5cd49ba9a470[m[33m ([m[1;36mHEAD -> [m[1;32mCSS[m[33m)[m
+Merge: 34a9a04 b84cc80
+Author: Lucas Santana <lucas.santana@itenabler.com.br>
+Date:   Tue May 4 11:24:42 2021 -0300
+
+    Fazendo merge da HTML para CSS
+
+[33mcommit b84cc80bcd1b572d54be532d9b4f43492dce688b[m[33m ([m[1;32mhtml[m[33m)[m
+Author: Lucas Santana <lucas.santana@itenabler.com.br>
+Date:   Tue May 4 11:21:07 2021 -0300
+
+    Adicionando a tag main, preços e serviços
+
+[1mdiff --git a/produtos.html b/produtos.html[m
+[1mindex 870cc3a..6d79983 100644[m
+[1m--- a/produtos.html[m
+[1m+++ b/produtos.html[m
+[36m@@ -3,19 +3,44 @@[m
+     <head>[m
+         <meta charset="UTF-8">[m
+         <title>Produtos - Barbearia Alura</title>[m
+[32m+[m[32m        <link rel="stylesheet" href="reset.css">[m
+         <link rel="stylesheet" href="produtos.css">[m
+     </head>[m
+     <body>[m
+         <header>[m
+[32m+[m[32m            <div class="caixa">[m
+             <h1><img src="logo.png"></h1>[m
+ [m
+[32m+[m[32m                <nav>[m
+[32m+[m[32m                    <ul>[m
+[32m+[m[32m                        <li><a href="index.html">Home </a> </li>[m
+[32m+[m[32m                        <li><a href="produtos.html">Produtos</a> </li>[m
+[32m+[m[32m                        <li><a href="contato.html">Contatos </a> </li>[m
+[32m+[m[32m                    </ul>[m
+[32m+[m[32m                </nav>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m        </header>[m
+[32m+[m[32m        <main>[m
+             <ul>[m
+[31m-                <li><a href="index.html">Home </a> </li>[m
+[31m-                <li><a href="produtos.html">Produtos</a> </li>[m
+[31m-                <li><a href="contatos.html">Contatos </a> </li>[m
+[32m+[m[32m                <li>[m
+[32m+[m[32m                    <h2>Cabelo</h2>[m[41m [m
+[32m+[m[32m                    <img src="cabelo.jpg">[m
+[32m+[m[32m                    <p>Na tesoura ou máquina, como o cliente preferir</p>[m
+[32m+[m[32m                    <p>R$ 25,00</p>[m
+[32m+[m[32m                </li>[m
+[32m+[m[32m                <li><h2>Barba</h2>[m
+[32m+[m[32m                    <img src="barba.jpg">[m
+[32m+[m[32m                    <p>Corte e desenho profissional de barba</p>[m
+[32m+[m[32m                    <p>R$ 18,00</p>[m
+[32m+[m[32m                </li>[m
+[32m+[m[32m                <li><h2>Cabelo + Barba</h2>[m[41m [m
+[32m+[m[32m                    <img src="cabelo+barba.jpg">[m
+[32m+[m[32m                    <p>Pacote completo de cabelo e barba</p>[m
+[32m+[m[32m                    <p>R$ 35,00</p>[m
+[32m+[m[32m                </li>[m
+             </ul>[m
+[31m-        </header>[m
+[31m-[m
+[32m+[m[32m        </main>[m
+[32m+[m[41m        [m
+     </body>[m
+ [m
+ </html>[m
+\ No newline at end of file[m
+
+[33mcommit 34a9a04761033a9772988f99eececaf76dfb05d8[m
+Author: Lucas Santana <lucas.santana@itenabler.com.br>
+Date:   Tue May 4 11:16:26 2021 -0300
+
+    Testando commit ma pagina html
+
+[1mdiff --git a/produtos.html b/produtos.html[m
+[1mindex 8f5f5fd..0327893 100644[m
+[1m--- a/produtos.html[m
+[1m+++ b/produtos.html[m
+[36m@@ -21,26 +21,7 @@[m
+             </div>[m
+         </header>[m
+ [m
+[31m-        <main>[m
+[31m-            <ul>[m
+[31m-                <li>[m
+[31m-                    <h2>Cabelo</h2> [m
+[31m-                    <img src="cabelo.jpg">[m
+[31m-                    <p>Na tesoura ou máquina, como o cliente preferir</p>[m
+[31m-                    <p>R$ 25,00</p>[m
+[31m-                </li>[m
+[31m-                <li><h2>Barba</h2>[m
+[31m-                    <img src="barba.jpg">[m
+[31m-                    <p>Corte e desenho profissional de barba</p>[m
+[31m-                    <p>R$ 18,00</p>[m
+[31m-                </li>[m
+[31m-                <li><h2>Cabelo + Barba</h2> [m
+[31m-                    <img src="cabelo+barba.jpg">[m
+[31m-                    <p>Pacote completo de cabelo e barba</p>[m
+[31m-                    <p>R$ 35,00</p>[m
+[31m-                </li>[m
+[31m-            </ul>[m
+[31m-        </main>[m
+[32m+[m[41m        [m
+     </body>[m
+ [m
+ </html>[m
+\ No newline at end of file[m
+
+[33mcommit dd303fbc50ffc12d5ce3855bf4ea06aa6854dd48[m
+Author: Lucas Santana <lucas.santana@itenabler.com.br>
+Date:   Tue May 4 11:15:05 2021 -0300
+
+    Testando commit ma pagina html
+
+[1mdiff --git a/produtos.html b/produtos.html[m
+[1mindex 0b008fe..8f5f5fd 100644[m
+[1m--- a/produtos.html[m
+[1m+++ b/produtos.html[m
+[36m@@ -21,6 +21,26 @@[m
+             </div>[m
+         </header>[m
+ [m
+[32m+[m[32m        <main>[m
+[32m+[m[32m            <ul>[m
+[32m+[m[32m                <li>[m
+[32m+[m[32m                    <h2>Cabelo</h2>[m[41m [m
+[32m+[m[32m                    <img src="cabelo.jpg">[m
+[32m+[m[32m                    <p>Na tesoura ou máquina, como o cliente preferir</p>[m
+[32m+[m[32m                    <p>R$ 25,00</p>[m
+[32m+[m[32m                </li>[m
+[32m+[m[32m                <li><h2>Barba</h2>[m
+[32m+[m[32m                    <img src="barba.jpg">[m
+[32m+[m[32m                    <p>Corte e desenho profissional de barba</p>[m
+[32m+[m[32m                    <p>R$ 18,00</p>[m
+[32m+[m[32m                </li>[m
+[32m+[m[32m                <li><h2>Cabelo + Barba</h2>[m[41m [m
+[32m+[m[32m                    <img src="cabelo+barba.jpg">[m
+[32m+[m[32m                    <p>Pacote completo de cabelo e barba</p>[m
+[32m+[m[32m                    <p>R$ 35,00</p>[m
+[32m+[m[32m                </li>[m
+[32m+[m[32m            </ul>[m
+[32m+[m[32m        </main>[m
+     </body>[m
+ [m
+ </html>[m
+\ No newline at end of file[m
+
+[33mcommit 3dae2b2a961d19c49e75aa7c612354f6581e0965[m
+Author: Lucas Santana <lucas.santana@itenabler.com.br>
+Date:   Tue May 4 11:00:00 2021 -0300
+
+    Ajuste de posicionamento do cabeçalho
+
+[1mdiff --git a/produtos.css b/produtos.css[m
+[1mindex 39a3a99..b0930a5 100644[m
+[1m--- a/produtos.css[m
+[1m+++ b/produtos.css[m
+[36m@@ -1,5 +1,12 @@[m
+ header {[m
+     background: #BBBBBB;[m
+[32m+[m[32m    padding: 20px 0;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.caixa{[m
+[32m+[m[32m    position: relative;[m
+[32m+[m[32m    width: 940px;[m
+[32m+[m[32m    margin: 0 auto;[m
+ }[m
+ [m
+ nav li {[m
+[36m@@ -7,6 +14,12 @@[m [mnav li {[m
+     margin: 0 0 0 15px;[m
+ }[m
+ [m
+[32m+[m[32mnav{[m
+[32m+[m[32m    position: absolute;[m
+[32m+[m[32m    top: 120px;[m
+[32m+[m[32m    right: 0px;[m
+[32m+[m[32m}[m
+[32m+[m
+ nav a {[m
+     text-transform: uppercase;[m
+     color: #000000;[m
+[1mdiff --git a/produtos.html b/produtos.html[m
+[1mindex b3c5cd1..0b008fe 100644[m
+[1m--- a/produtos.html[m
+[1m+++ b/produtos.html[m
+[36m@@ -8,15 +8,17 @@[m
+     </head>[m
+     <body>[m
+         <header>[m
+[32m+[m[32m            <div class="caixa">[m
+             <h1><img src="logo.png"></h1>[m
+ [m
+[31m-            <nav>[m
+[31m-                <ul>[m
+[31m-                    <li><a href="index.html">Home </a> </li>[m
+[31m-                    <li><a href="produtos.html">Produtos</a> </li>[m
+[31m-                    <li><a href="contato.html">Contatos </a> </li>[m
+[31m-                </ul>[m
+[31m-            </nav>[m
+[32m+[m[32m                <nav>[m
+[32m+[m[32m                    <ul>[m
+[32m+[m[32m                        <li><a href="index.html">Home </a> </li>[m
+[32m+[m[32m                        <li><a href="produtos.html">Produtos</a> </li>[m
+[32m+[m[32m                        <li><a href="contato.html">Contatos </a> </li>[m
+[32m+[m[32m                    </ul>[m
+[32m+[m[32m                </nav>[m
+[32m+[m[32m            </div>[m
+         </header>[m
+ [m
+     </body>[m
+
+[33mcommit 8360e40f012227b8d50f3e35a96074b881f5e44e[m
+Author: Lucas Santana <lucas.santana@itenabler.com.br>
+Date:   Tue May 4 10:46:24 2021 -0300
+
+    Adicionando e vinculando arquivo reset.css
+
+[1mdiff --git a/produtos.html b/produtos.html[m
+[1mindex 3b3532c..b3c5cd1 100644[m
+[1m--- a/produtos.html[m
+[1m+++ b/produtos.html[m
+[36m@@ -3,6 +3,7 @@[m
+     <head>[m
+         <meta charset="UTF-8">[m
+         <title>Produtos - Barbearia Alura</title>[m
+[32m+[m[32m        <link rel="stylesheet" href="reset.css">[m
+         <link rel="stylesheet" href="produtos.css">[m
+     </head>[m
+     <body>[m
+[1mdiff --git a/reset.css b/reset.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..af94440[m
+[1m--- /dev/null[m
+[1m+++ b/reset.css[m
+[36m@@ -0,0 +1,48 @@[m
+[32m+[m[32m/* http://meyerweb.com/eric/tools/css/reset/[m[41m [m
+[32m+[m[32m   v2.0 | 20110126[m
+[32m+[m[32m   License: none (public domain)[m
+[32m+[m[32m*/[m
+[32m+[m
+[32m+[m[32mhtml, body, div, span, applet, object, iframe,[m
+[32m+[m[32mh1, h2, h3, h4, h5, h6, p, blockquote, pre,[m
+[32m+[m[32ma, abbr, acronym, address, big, cite, code,[m
+[32m+[m[32mdel, dfn, em, img, ins, kbd, q, s, samp,[m
+[32m+[m[32msmall, strike, strong, sub, sup, tt, var,[m
+[32m+[m[32mb, u, i, center,[m
+[32m+[m[32mdl, dt, dd, ol, ul, li,[m
+[32m+[m[32mfieldset, form, label, legend,[m
+[32m+[m[32mtable, caption, tbody, tfoot, thead, tr, th, td,[m
+[32m+[m[32marticle, aside, canvas, details, embed,[m[41m [m
+[32m+[m[32mfigure, figcaption, footer, header, hgroup,[m[41m [m
+[32m+[m[32mmenu, nav, output, ruby, section, summary,[m
+[32m+[m[32mtime, mark, audio, video {[m
+[32m+[m	[32mmargin: 0;[m
+[32m+[m	[32mpadding: 0;[m
+[32m+[m	[32mborder: 0;[m
+[32m+[m	[32mfont-size: 100%;[m
+[32m+[m	[32mfont: inherit;[m
+[32m+[m	[32mvertical-align: baseline;[m
+[32m+[m[32m}[m
+[32m+[m[32m/* HTML5 display-role reset for older browsers */[m
+[32m+[m[32marticle, aside, details, figcaption, figure,[m[41m [m
+[32m+[m[32mfooter, header, hgroup, menu, nav, section {[m
+[32m+[m	[32mdisplay: block;[m
+[32m+[m[32m}[m
+[32m+[m[32mbody {[m
+[32m+[m	[32mline-height: 1;[m
+[32m+[m[32m}[m
+[32m+[m[32mol, ul {[m
+[32m+[m	[32mlist-style: none;[m
+[32m+[m[32m}[m
+[32m+[m[32mblockquote, q {[m
+[32m+[m	[32mquotes: none;[m
+[32m+[m[32m}[m
+[32m+[m[32mblockquote:before, blockquote:after,[m
+[32m+[m[32mq:before, q:after {[m
+[32m+[m	[32mcontent: '';[m
+[32m+[m	[32mcontent: none;[m
+[32m+[m[32m}[m
+[32m+[m[32mtable {[m
+[32m+[m	[32mborder-collapse: collapse;[m
+[32m+[m	[32mborder-spacing: 0;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+
+[33mcommit 8a1fe649e1353ae7cb1dda2a37238c8998576fe1[m
+Author: Lucas Santana <lucas.santana@itenabler.com.br>
+Date:   Tue May 4 10:35:21 2021 -0300
+
+    Adicionando formatação aos links
+
+[1mdiff --git a/produtos.css b/produtos.css[m
+[1mindex e69de29..39a3a99 100644[m
+[1m--- a/produtos.css[m
+[1m+++ b/produtos.css[m
+[36m@@ -0,0 +1,16 @@[m
+[32m+[m[32mheader {[m
+[32m+[m[32m    background: #BBBBBB;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mnav li {[m
+[32m+[m[32m    display: inline;[m
+[32m+[m[32m    margin: 0 0 0 15px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mnav a {[m
+[32m+[m[32m    text-transform: uppercase;[m
+[32m+[m[32m    color: #000000;[m
+[32m+[m[32m    font-weight: bold;[m
+[32m+[m[32m    font-size: 22 px;[m
+[32m+[m[32m    text-decoration: none;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/produtos.html b/produtos.html[m
+[1mindex 870cc3a..3b3532c 100644[m
+[1m--- a/produtos.html[m
+[1m+++ b/produtos.html[m
+[36m@@ -9,11 +9,13 @@[m
+         <header>[m
+             <h1><img src="logo.png"></h1>[m
+ [m
+[31m-            <ul>[m
+[31m-                <li><a href="index.html">Home </a> </li>[m
+[31m-                <li><a href="produtos.html">Produtos</a> </li>[m
+[31m-                <li><a href="contatos.html">Contatos </a> </li>[m
+[31m-            </ul>[m
+[32m+[m[32m            <nav>[m
+[32m+[m[32m                <ul>[m
+[32m+[m[32m                    <li><a href="index.html">Home </a> </li>[m
+[32m+[m[32m                    <li><a href="produtos.html">Produtos</a> </li>[m
+[32m+[m[32m                    <li><a href="contato.html">Contatos </a> </li>[m
+[32m+[m[32m                </ul>[m
+[32m+[m[32m            </nav>[m
+         </header>[m
+ [m
+     </body>[m
+
+[33mcommit 48b9893e9f5a0f80edf8d86cc5f0459bf0f2d6da[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Lucas Santana <lucas.santana@itenabler.com.br>
+Date:   Tue May 4 09:57:22 2021 -0300
+
+    Adicionando links na página de produtos
+
+[1mdiff --git a/produtos.html b/produtos.html[m
+[1mindex 379b974..870cc3a 100644[m
+[1m--- a/produtos.html[m
+[1m+++ b/produtos.html[m
+[36m@@ -10,9 +10,9 @@[m
+             <h1><img src="logo.png"></h1>[m
+ [m
+             <ul>[m
+[31m-                <li>Home </li>[m
+[31m-                <li>Produtos </li>[m
+[31m-                <li>Contatos </li>[m
+[32m+[m[32m                <li><a href="index.html">Home </a> </li>[m
+[32m+[m[32m                <li><a href="produtos.html">Produtos</a> </li>[m
+[32m+[m[32m                <li><a href="contatos.html">Contatos </a> </li>[m
+             </ul>[m
+         </header>[m
+ [m
+
+[33mcommit d47ea31207f90206d9598339e102de0c0f8a6170[m
+Author: Lucas Santana <lucas.santana@itenabler.com.br>
+Date:   Tue May 4 09:43:16 2021 -0300
+
+    Criando página produtos.html e estilo produto.css e inserindo imagens na pasta
+
+[1mdiff --git a/barba.jpg b/barba.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3151d86[m
+Binary files /dev/null and b/barba.jpg differ
+[1mdiff --git a/bg.jpg b/bg.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..164742f[m
+Binary files /dev/null and b/bg.jpg differ
+[1mdiff --git a/cabelo+barba.jpg b/cabelo+barba.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1757568[m
+Binary files /dev/null and b/cabelo+barba.jpg differ
+[1mdiff --git a/cabelo.jpg b/cabelo.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..53a8538[m
+Binary files /dev/null and b/cabelo.jpg differ
+[1mdiff --git a/logo-branco.png b/logo-branco.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..74fe323[m
+Binary files /dev/null and b/logo-branco.png differ
+[1mdiff --git a/logo.png b/logo.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..91705c1[m
+Binary files /dev/null and b/logo.png differ
+[1mdiff --git a/produtos.css b/produtos.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e69de29[m
+[1mdiff --git a/produtos.html b/produtos.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..379b974[m
+[1m--- /dev/null[m
+[1m+++ b/produtos.html[m
+[36m@@ -0,0 +1,21 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="pt-br">[m
+[32m+[m[32m    <head>[m
+[32m+[m[32m        <meta charset="UTF-8">[m
+[32m+[m[32m        <title>Produtos - Barbearia Alura</title>[m
+[32m+[m[32m        <link rel="stylesheet" href="produtos.css">[m
+[32m+[m[32m    </head>[m
+[32m+[m[32m    <body>[m
+[32m+[m[32m        <header>[m
+[32m+[m[32m            <h1><img src="logo.png"></h1>[m
+[32m+[m
+[32m+[m[32m            <ul>[m
+[32m+[m[32m                <li>Home </li>[m
+[32m+[m[32m                <li>Produtos </li>[m
+[32m+[m[32m                <li>Contatos </li>[m
+[32m+[m[32m            </ul>[m
+[32m+[m[32m        </header>[m
+[32m+[m
+[32m+[m[32m    </body>[m
+[32m+[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+
+[33mcommit a58db419ae8adb8ac675934602ddf27226c7312f[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Lucas Santana <lucas.santana@itenabler.com.br>
+Date:   Tue May 4 09:02:34 2021 -0300
+
+    Finalizando o CSS da parte 1 do curso
+
+[1mdiff --git a/style.css b/style.css[m
+[1mindex 307da6c..82c3a09 100644[m
+[1m--- a/style.css[m
+[1m+++ b/style.css[m
+[36m@@ -1,3 +1,16 @@[m
+[32m+[m[32m#banner {[m
+[32m+[m	[32mwidth:100%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.principal{[m
+[32m+[m	[32mbackground: #CCCCCC;[m
+[32m+[m	[32mpadding: 30px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.titulo-principal {[m
+[32m+[m	[32mpadding-left: 20px;[m
+[32m+[m[32m}[m
+[32m+[m
+ .titulo-centralizado {[m
+ 	text-align: center[m
+ }[m
+
+[33mcommit feeea2513106954468e4d131e8efdb3f339d484f[m
+Author: Lucas Santana <lucas.santana@itenabler.com.br>
+Date:   Tue May 4 08:39:38 2021 -0300
+
+    Atualizando o código para o final do curso 1 de HTML e CSS
+
+[1mdiff --git a/beneficios.jpg b/beneficios.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5b15eec[m
+Binary files /dev/null and b/beneficios.jpg differ
+[1mdiff --git a/index.html b/index.html[m
+[1mindex b8bce38..0de3c11 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -1,21 +1,38 @@[m
+[32m+[m
+ <!DOCTYPE html>[m
+ <html lang="pt-br">[m
+ 	<head>[m
+ 		<meta charset="UTF-8">[m
+ 		<title>Barbearia Alura</title>[m
+ 		<link rel="stylesheet" href="style.css">[m
+[31m-[m
+ 	</head>[m
+ [m
+ 	<body>[m
+[32m+[m		[32m<header>[m
+[32m+[m			[32m<h1 class="titulo-principal">Barbearia Alura</h1>[m
+[32m+[m		[32m</header>[m
+[32m+[m		[32m<img id="banner" src="banner.jpg">[m
+[32m+[m		[32m<div class="principal">[m
+[32m+[m			[32m<h2 class="titulo-centralizado">Sobre a Barbearia Alura</h2>[m
+[32m+[m[41m	 [m
+[32m+[m			[32m<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>[m
+[32m+[m
+[32m+[m			[32m<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>[m
+[32m+[m
+[32m+[m			[32m<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>[m
+[32m+[m		[32m</div>[m
+ [m
+[31m-		<img src="banner.jpg">[m
+[31m-		<h1>Sobre a Barbearia Alura</h1>[m
+[31m- [m
+[31m-		<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>[m
+[32m+[m		[32m<div class="beneficios">[m
+[32m+[m			[32m<h3 class="titulo-centralizado">Benefícios</h3>[m
+ [m
+[31m-		<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>[m
+[32m+[m			[32m<ul>[m
+[32m+[m				[32m<li class="itens">Atendimento aos Clientes</li>[m
+[32m+[m				[32m<li class="itens">Espaço diferenciado</li>[m
+[32m+[m				[32m<li class="itens">Localização</li>[m
+[32m+[m				[32m<li class="itens">Profissionais Qualificados</li>[m
+[32m+[m			[32m</ul>[m
+ [m
+[31m-		<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>[m
+[32m+[m			[32m<img src="beneficios.jpg" class="imagembeneficios">[m
+[32m+[m		[32m</div>[m
+ 	</body>[m
+ </html>[m
+\ No newline at end of file[m
+[1mdiff --git a/style.css b/style.css[m
+[1mindex b3bba93..307da6c 100644[m
+[1m--- a/style.css[m
+[1m+++ b/style.css[m
+[36m@@ -1,15 +1,35 @@[m
+[31m-body {[m
+[31m-	background: #CCCCCC[m
+[32m+[m[32m.titulo-centralizado {[m
+[32m+[m	[32mtext-align: center[m
+ }[m
+ [m
+[31m-h1 {[m
+[32m+[m[32mp {[m
+ 	text-align: center;[m
+ }[m
+ [m
+[31m-p {[m
+[31m-	text-align: center;[m
+[32m+[m[32m#missao {[m
+[32m+[m	[32mfont-size: 20px[m
+ }[m
+ [m
+ em strong {[m
+ 	color: #FF0000;[m
+ }[m
+[32m+[m
+[32m+[m[32m.itens {[m
+[32m+[m	[32mfont-style: italic[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.beneficios {[m
+[32m+[m	[32mbackground: #FFFFFF;[m
+[32m+[m	[32mpadding: 20px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mul {[m
+[32m+[m	[32mdisplay: inline-block;[m
+[32m+[m	[32mvertical-align: top;[m
+[32m+[m	[32mwidth: 20%;[m
+[32m+[m	[32mmargin-right: 15%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.imagembeneficios {[m
+[32m+[m	[32mwidth: 50%;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+
+[33mcommit c7657820b8bac6ec464dd12ca8393b77a2f9c6cd[m
+Author: Lucas Santana <lucas.santana@itenabler.com.br>
+Date:   Tue May 4 08:34:57 2021 -0300
+
+    Criando arquivo index.html com página inicial da Barbearia
+
+[1mdiff --git a/banner.jpg b/banner.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4fc3b2e[m
+Binary files /dev/null and b/banner.jpg differ
+[1mdiff --git a/index.html b/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b8bce38[m
+[1m--- /dev/null[m
+[1m+++ b/index.html[m
+[36m@@ -0,0 +1,21 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="pt-br">[m
+[32m+[m	[32m<head>[m
+[32m+[m		[32m<meta charset="UTF-8">[m
+[32m+[m		[32m<title>Barbearia Alura</title>[m
+[32m+[m		[32m<link rel="stylesheet" href="style.css">[m
+[32m+[m
+[32m+[m	[32m</head>[m
+[32m+[m
+[32m+[m	[32m<body>[m
+[32m+[m
+[32m+[m		[32m<img src="banner.jpg">[m
+[32m+[m		[32m<h1>Sobre a Barbearia Alura</h1>[m
+[32m+[m[41m [m
+[32m+[m		[32m<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>[m
+[32m+[m
+[32m+[m		[32m<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>[m
+[32m+[m
+[32m+[m		[32m<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>[m
+[32m+[m	[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/style.css b/style.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b3bba93[m
+[1m--- /dev/null[m
+[1m+++ b/style.css[m
+[36m@@ -0,0 +1,15 @@[m
+[32m+[m[32mbody {[m
+[32m+[m	[32mbackground: #CCCCCC[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mh1 {[m
+[32m+[m	[32mtext-align: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mp {[m
+[32m+[m	[32mtext-align: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mem strong {[m
+[32m+[m	[32mcolor: #FF0000;[m
+[32m+[m[32m}[m
